@@ -18,13 +18,13 @@ var lista = document.getElementById('lista')
 //     n++    
 
 //     if ( ( n % 3 == 0 ) && ( n % 5 !== 0 ) ) {
-//         lista.innerHTML = list += '<li><strong>' + 'Fizz' + '</strong></li>'
+//         lista.innerHTML = list += '<li> <strong>' + 'Fizz' + '</strong> </li>'
 //         } else if ( ( n % 5 == 0 ) && ( n % 3 !== 0 ) )  {
 //         lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
 //         } else if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) )  {
 //         lista.innerHTML = list += '<li> <strong>' + 'FizzBuzz' + '</strong> </li>'
 //         }  else {
-//             lista.innerHTML = list += '<li> <strong>' + n + '</strong> </li>'
+//             lista.innerHTML = list += '<li> <span>' + n + '</span> </li>'
 //         }
 
 // }
@@ -37,13 +37,13 @@ while ( n < 100 ) {
     n++
 
     if ( ( n % 3 == 0 ) && ( n % 5 !== 0 ) ) {
-    lista.innerHTML = list += '<li><strong>' + 'Fizz' + '</strong></li>'
+    lista.innerHTML = list += '<li> <strong>' + 'Fizz' + '</strong> </li>'
     } else if ( ( n % 5 == 0 ) && ( n % 3 !== 0 ) )  {
     lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
     } else if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) )  {
     lista.innerHTML = list += '<li> <strong>' + 'FizzBuzz' + '</strong> </li>'
     }  else {
-        lista.innerHTML = list += '<li> <strong>' + n + '</strong> </li>'
+        lista.innerHTML = list += '<li> <span>' + n + '</span> </li>'
     }
 
 }
@@ -55,13 +55,13 @@ while ( n < 100 ) {
 //     n++
 
 //     if ( ( n % 3 == 0 ) && ( n % 5 !== 0 ) ) {
-//     lista.innerHTML = list += '<li><strong>' + 'Fizz' + '</strong></li>'
+//     lista.innerHTML = list += '<li> <strong>' + 'Fizz' + '</strong> </li>'
 //     } else if ( ( n % 5 == 0 ) && ( n % 3 !== 0 ) )  {
 //     lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
 //     } else if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) )  {
 //     lista.innerHTML = list += '<li> <strong>' + 'FizzBuzz' + '</strong> </li>'
 //     }  else {
-//         lista.innerHTML = list += '<li> <strong>' + n + '</strong> </li>'
+//         lista.innerHTML = list += '<li> <span>' + n + '</span> </li>'
 //     }
 
 // } while ( n < 100 )
