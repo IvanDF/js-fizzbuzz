@@ -8,17 +8,21 @@
  */
 
 var n = 0;
+var list = ''
+var lista = document.getElementById('lista')
 
 for ( i = 0; i < 100; i++ ) {
 
     n++
     
     if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) ) {
-        console.log('FizzBuzz');
+    lista.innerHTML = list += '<li><strong>' + 'FizzBuzz' + '</strong></li>'
     } else if ( n % 3 == 0 ) {
-        console.log('Fizz');
+    lista.innerHTML = list += '<li> <strong>' + 'Fizz' + '</strong> </li>'
     } else if ( n % 5 == 0)  {
-        console.log('Buzz')
+    lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
     }  else 
+
+    lista.innerHTML = list += '<li> <strong>' + n + '</strong> </li>'
     console.log(n);
 }
