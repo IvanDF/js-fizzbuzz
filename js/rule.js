@@ -13,12 +13,12 @@ for ( i = 0; i < 100; i++ ) {
 
     n++
     
-    if ( n % 3 == 0 ) {
+    if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) ) {
+        console.log('FizzBuzz');
+    } else if ( n % 3 == 0 ) {
         console.log('Fizz');
     } else if ( n % 5 == 0)  {
         console.log('Buzz')
-    } else if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) ) {
-        console.log('FizzBuzz');
-    } else 
+    }  else 
     console.log(n);
 }
