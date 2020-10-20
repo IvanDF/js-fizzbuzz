@@ -11,18 +11,57 @@ var n = 0;
 var list = ''
 var lista = document.getElementById('lista')
 
-for ( i = 0; i < 100; i++ ) {
+// CICLO FOR
+
+// for ( i = 0; i < 100; i++ ) {
+
+//     n++    
+
+//     if ( ( n % 3 == 0 ) && ( n % 5 !== 0 ) ) {
+//         lista.innerHTML = list += '<li><strong>' + 'Fizz' + '</strong></li>'
+//         } else if ( ( n % 5 == 0 ) && ( n % 3 !== 0 ) )  {
+//         lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
+//         } else if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) )  {
+//         lista.innerHTML = list += '<li> <strong>' + 'FizzBuzz' + '</strong> </li>'
+//         }  else {
+//             lista.innerHTML = list += '<li> <strong>' + n + '</strong> </li>'
+//         }
+
+// }
+
+
+// CICLO WHILE
+
+while ( n < 100 ) {
 
     n++
-    
-    if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) ) {
-    lista.innerHTML = list += '<li><strong>' + 'FizzBuzz' + '</strong></li>'
-    } else if ( n % 3 == 0 ) {
-    lista.innerHTML = list += '<li> <strong>' + 'Fizz' + '</strong> </li>'
-    } else if ( n % 5 == 0)  {
-    lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
-    }  else 
 
-    lista.innerHTML = list += '<li> <strong>' + n + '</strong> </li>'
-    console.log(n);
+    if ( ( n % 3 == 0 ) && ( n % 5 !== 0 ) ) {
+    lista.innerHTML = list += '<li><strong>' + 'Fizz' + '</strong></li>'
+    } else if ( ( n % 5 == 0 ) && ( n % 3 !== 0 ) )  {
+    lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
+    } else if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) )  {
+    lista.innerHTML = list += '<li> <strong>' + 'FizzBuzz' + '</strong> </li>'
+    }  else {
+        lista.innerHTML = list += '<li> <strong>' + n + '</strong> </li>'
+    }
+
 }
+
+
+// CICLO DO-WHILE
+
+// do {
+//     n++
+
+//     if ( ( n % 3 == 0 ) && ( n % 5 !== 0 ) ) {
+//     lista.innerHTML = list += '<li><strong>' + 'Fizz' + '</strong></li>'
+//     } else if ( ( n % 5 == 0 ) && ( n % 3 !== 0 ) )  {
+//     lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
+//     } else if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) )  {
+//     lista.innerHTML = list += '<li> <strong>' + 'FizzBuzz' + '</strong> </li>'
+//     }  else {
+//         lista.innerHTML = list += '<li> <strong>' + n + '</strong> </li>'
+//     }
+
+// } while ( n < 100 )
