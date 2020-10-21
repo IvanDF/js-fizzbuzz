@@ -7,46 +7,44 @@
 
  */
 
-var n = 0;
 var list = ''
 var lista = document.getElementById('lista')
 
 // CICLO FOR
 
-// for ( i = 0; i < 100; i++ ) {
+for ( i = 1; i <= 100; i++ ) {
 
-//     n++    
+    if ( ( i % 3 == 0 ) && ( i % 5 !== 0 ) ) {
+        lista.innerHTML = list += '<li> <strong>' + 'Fizz' + '</strong> </li>'
+        } else if ( ( i % 5 == 0 ) && ( i % 3 !== 0 ) )  {
+        lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
+        } else if ( ( i % 3 == 0 ) && ( i % 5 == 0 ) )  {
+        lista.innerHTML = list += '<li> <strong>' + 'FizzBuzz' + '</strong> </li>'
+        }  else {
+            lista.innerHTML = list += '<li> <span>' + i + '</span> </li>'
+        }
+}
 
-//     if ( ( n % 3 == 0 ) && ( n % 5 !== 0 ) ) {
-//         lista.innerHTML = list += '<li> <strong>' + 'Fizz' + '</strong> </li>'
-//         } else if ( ( n % 5 == 0 ) && ( n % 3 !== 0 ) )  {
-//         lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
-//         } else if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) )  {
-//         lista.innerHTML = list += '<li> <strong>' + 'FizzBuzz' + '</strong> </li>'
-//         }  else {
-//             lista.innerHTML = list += '<li> <span>' + n + '</span> </li>'
-//         }
 
-// }
-
+// var n = 0;
 
 // CICLO WHILE
 
-while ( n < 100 ) {
+// while ( n < 100 ) {
 
-    n++
+//     n++
 
-    if ( ( n % 3 == 0 ) && ( n % 5 !== 0 ) ) {
-    lista.innerHTML = list += '<li> <strong>' + 'Fizz' + '</strong> </li>'
-    } else if ( ( n % 5 == 0 ) && ( n % 3 !== 0 ) )  {
-    lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
-    } else if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) )  {
-    lista.innerHTML = list += '<li> <strong>' + 'FizzBuzz' + '</strong> </li>'
-    }  else {
-        lista.innerHTML = list += '<li> <span>' + n + '</span> </li>'
-    }
+//     if ( ( n % 3 == 0 ) && ( n % 5 !== 0 ) ) {
+//     lista.innerHTML = list += '<li> <strong>' + 'Fizz' + '</strong> </li>'
+//     } else if ( ( n % 5 == 0 ) && ( n % 3 !== 0 ) )  {
+//     lista.innerHTML = list += '<li> <strong>' + 'Buzz' + '</strong> </li>'
+//     } else if ( ( n % 3 == 0 ) && ( n % 5 == 0 ) )  {
+//     lista.innerHTML = list += '<li> <strong>' + 'FizzBuzz' + '</strong> </li>'
+//     }  else {
+//         lista.innerHTML = list += '<li> <span>' + n + '</span> </li>'
+//     }
 
-}
+// }
 
 
 // CICLO DO-WHILE
